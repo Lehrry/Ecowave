@@ -1,0 +1,119 @@
+// This scss file is the responsive desktop version of the website
+// importation starts htere
+@import url(../../variables&all.scss);
+// importation ends here
+
+// if you have any comment or suggestion on improving the overall code. Kind drop em between each section in relation to the section below.
+
+// desktop specific mixin declarations
+@mixin desktopsecpad {
+    padding: 100px 50px;
+}
+
+// mixin declaration ends here
+
+
+// media queries code starts here
+@media (min-width: 1040px) {
+    .headerleft {
+        display: flex;
+    }
+    
+    .textarea {
+        @include flexcol;
+        width: 60%;
+        gap: 100px;
+    }
+
+    .sec1 {
+        @include flexrow;
+        @include desktopsecpad;
+        gap: 60px;
+        margin: 100px 0;
+    }
+
+    .sec1left {
+        position: relative;
+        width: 50%;
+        // padding-top: 100px;
+        // height: 100vh;
+    }
+
+    .sec1img1 {
+        @include sec1img;
+        // top: 10%;
+        bottom: 70%;
+        // left: 5%;
+        right: 62.5%;
+        width: 200px;
+        height: 150px;
+    }
+    
+    .sec1img2 {
+        @include sec1img;
+        // top: 5%;
+        bottom: 80%;
+        left: 40%;
+        width: 350px;
+        height: 200px;
+    }
+    
+    .sec1img3 {
+        @include sec1img;
+        top: 35%;
+        // right: 57.5%;
+        // bottom: 20%;
+        left: 10%;
+        width: 250px;
+        height: 200px
+    }
+    
+    .sec1img4 {
+        @include sec1img;
+        top: 25%;
+        // right: 20%;
+        // bottom: 0;
+        left: 55%;
+        width: 200px;
+        height: 300px;
+    }
+
+    .sec1ryt {
+        @include sectextera;
+        width: 45%;
+    }
+
+    .head h1 {
+        font-size: $largetxt;
+        z-index: 1;
+    }
+
+    .pull {
+        max-width: 50px;
+        max-height: 50px;
+        position: absolute;
+        bottom: 45%;
+        right: 0;
+    }
+
+    // section 2 starts here
+    .sec2left {
+        @include sectextera;
+        justify-content: flex-start;
+        width: 60%;
+    }
+
+    .sec2left p {
+        font-size: $mediumtxt;
+    }
+
+    .sec2ryt {
+        @include flexrow;
+        justify-content: flex-end !important;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        margin-top: -150px; 
+        padding-left: 400px
+    }
+}

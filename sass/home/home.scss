@@ -1,0 +1,604 @@
+@import "../../sass/reset.scss";
+@import "../../sass/variables&all.scss";
+// End Importations
+
+
+// css coding starts here
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include mobilesecpad;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-image: url(../../Assets/LandingPage/Rectangle\ 56.png);
+    background-position: center;
+    background-size: cover;
+    // background-repeat: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.headerleft {
+    display: none;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+nav {
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: transparent;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: $foregroundcolorII;
+    }
+
+    a:hover {
+        border-bottom: solid 5px $primarycolor;
+    }
+
+    a:active {
+        border-bottom: solid 5px $primarycolor;
+        // @extend a:hover;
+        color: $primarycolor;
+    }
+
+}
+
+.btnarea {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    @include normalbtn; 
+}
+
+.searchicon {
+    width: 10px;
+    height: 10px;
+}
+// end of header section
+
+.herolow {
+    display: flex;
+    flex-direction: flex-start;
+    padding: 150px 0px;
+    // width: 60%;
+}
+
+.textarea {
+    @include flexcol;
+    width: 90%;
+    gap: 100px;
+}
+
+.top {
+    @include flexcol;
+    gap: 10px;
+    color: $foregroundcolorII;
+}
+
+.top h1 {
+    font-size: $bigtxt;
+}
+
+.top p {
+    font-size: $mobbasetxt;
+}
+
+.lowerarea {
+    @include flexcol;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.herobtn {
+    @include normalbtn;
+    width: 50%;
+} 
+
+.socialproofcont {
+    @include flexrow;
+    // display: flex;
+    width: 60%;
+    flex-direction: flex-start !important;
+    gap: 20px;
+}
+
+.socialproof {
+    @include flexcol;
+    padding: 0;
+    // justify-content: center !important;
+    align-items: center;
+    // flex-direction: start;
+    gap: 0.5rem;
+    // width: 50%;
+    color: rgb(206, 206, 206);
+}
+
+.socialproof p {
+    font-size: $captiontxt;
+    text-align: center;
+}
+
+.socialproof h3 {
+    font: {
+        size: $basetxt;
+        weight: 600;
+    }
+}
+// End of hero/header section
+
+// main section starts here
+// section 1 starts here
+.sec1 {
+    @include flexcol;
+    flex-direction: column-reverse;
+    @include mobsecpad;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.sec1left {
+    position: relative;
+    width: 100%;
+    // padding-top: 100px;
+    // height: 100vh;
+    margin-top: 100px;
+}
+
+.sec1img1 {
+    @include sec1img;
+    // top: 10%;
+    bottom: 80%;
+    // left: 5%;
+    right: 65%;
+    width: 125px;
+    height: 75px;
+    // margin-top: 100px;
+}
+
+.sec1img2 {
+    @include sec1img;
+    // top: 5%;
+    bottom: 80%;
+    left: 37.5%;
+    width: 225px;
+    height: 125px;
+}
+
+.sec1img3 {
+    @include sec1img;
+    top: 47.5%;
+    // right: 57.5%;
+    // bottom: 0%;
+    left: 2.5%;
+    width: 175px;
+    height: 125px;
+    margin-top: 10px;
+}
+
+.sec1img4 {
+    @include sec1img;
+    top: 25%;
+    // right: 20%;
+    // bottom: 0;
+    left: 56.5%;
+    width: 125px;
+    height: 225px;
+    margin-top: 10px;
+}
+
+.sec1ryt {
+    @include sectextera;
+    width: 100%;
+}
+
+.sec1ryt p {
+    font-size: $mobbasetxt;
+}
+
+.head {
+    @include flexrow;
+    position: relative;
+}
+
+.head h1 {
+    font-size: $bigtxt;
+    z-index: 1;
+}
+
+.pull {
+    max-width: 30px;
+    max-height: 30px;
+    position: absolute;
+    // top: 0;
+    bottom: 40%;
+    // right: 0%;
+    left: 65%;
+    // z-index: 0;
+}
+
+.transbtn {
+    @include transbtn;
+}
+// End section 1
+
+// section 2 start here
+.sec2 {
+    @include mobilesecpad;
+    // @include secpad;
+    @include flexcol;
+    gap: 0px;
+}
+
+.sec2left {
+    @include sectextera;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.sec2left p {
+    @include basetext;
+}
+
+.sec2ryt {
+    @include flexrow;
+    // justify-content: flex-end !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: -75px; 
+    // padding-left: 400px
+}
+
+.sec2cont {
+    @include sec2cont;
+}
+
+.sec2icon {
+    width: 40px;
+    height: 40px;
+}
+
+.sec2ryt p {
+    font-size: $smallertxt;
+    text-align: center;
+}
+
+.env-aud {
+    @include sec2cont;
+    margin-top: 100px;
+}
+
+.sus-con {
+    @include sec2cont;
+    // margin-top: 100px;
+}
+
+.ene-eff {
+    @include sec2cont;
+    // margin-top: 100px;
+}
+
+.reg-com {
+    @include sec2cont;
+    margin-top: -100px;
+}
+
+.was-man {
+    @include sec2cont;
+    // margin-top: 100px
+}
+
+.coo-tra {
+    @include sec2cont;
+    margin-top: -100px;
+}
+// sec2 ends here
+
+// sec3 starts here
+.sec3 {
+    @include mobilesecpad;
+    @include flexrow;
+    justify-content: flex-start !important;
+    // padding-left: 20px;
+    background-image: url(../../Assets/LandingPage/Rectangle43.png);
+    background-size: cover;
+    background-position: center;
+    // background-repeat: none;
+}
+
+.textholder {
+    @include flexcol;
+    width: 80%;
+    margin-left: 10px;
+    background-color: white;
+    gap: 50px;
+    padding: 20px 20px;
+}
+
+.topside {
+    @include flexcol;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.topside h1 {
+    color: $secondarycolor;
+    font-size: $mediumtxt;
+}
+
+.secondtop {
+    @include flexcol;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.secondtop p {
+    font-size: $smallertxt;
+}
+
+// .transbtn {
+//     @include transbtn;
+// }
+// section 3 ends here
+
+// section4 starts here
+.sec4 {
+    @include mobsecpad;
+    @include flexcol; 
+    gap: 30px;
+    width: 100%
+}
+
+.sec4top {
+    @include flexrow;
+    // justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.sec4topleft {
+    @include flexcol;
+    gap: 5px;
+}
+
+.sec4topleft p {
+    color: $secondarycolor;
+    font-size: $smallertxt
+}
+
+.sec4topleft h1 {
+    font-size: $mediumtxt;
+}
+
+.transbtn {
+    @include transbtn;
+    padding: 0px !important;
+}
+
+.sec4botom {
+    @include flexcol;
+    justify-content: space-between !important;
+    width: 100%;
+    gap: 50px;
+}
+
+.blogpost {
+    @include flexcol;
+    gap: 20px;
+}
+
+.blogpost img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.blog2hide {
+    display: none;
+}
+
+.textarea {
+    @include flexcol;
+    gap: 10px;
+}
+
+.textarea p {
+    font-size: $mobbasetxt;
+}
+
+// sec4 ends here
+
+// sec5 starts here
+.sec5 {
+    @include flexcol;
+    // flex-direction: row-reverse;
+    @include mobsecpad;
+    // justify-content: center !important;
+    gap: 50px;
+    background-color: $othercolor;
+}
+
+.sec5top {
+    @include flexrow;
+    justify-content: flex-end;
+    width: 100%;
+    // align-items: ;
+}
+
+.faqhead h1 {
+    text-align: right;
+}
+
+.lastpull {
+    // right: 70%;
+    left: 30%
+}
+
+// .head h1 {
+//     text-align: right; 
+// }
+
+.sec5botom {
+    @include flexcol;
+    width: 100%;
+    justify-content: center;
+    // margin-top: 150px;
+
+}
+
+.faqs {
+    @include flexrow;
+    width: 100%;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: solid 3px black;
+}
+
+.faqs p {
+    font-size: $mobbasetxt;
+    font-weight: 500; 
+}
+
+// sec5 ends here
+
+// sec6 starts here
+.sec6 {
+    @include flexcol;
+    // @include mobsecpad;
+    align-items: center;
+    gap: 50px;
+    padding: 200px 0px !important;
+}
+
+.sec6 h1 {
+    font-size: $bigtxt;
+}
+
+.sec6 button {
+    width: 50%;
+    padding: 10px 0px !important;
+}
+// section 6 ends here
+
+// main section ends here
+
+// footer section starts here
+footer {
+    // @include secpad;
+    // padding-bottom: 0px !important;
+    @include flexcol;
+    width: 100%;
+    background-color: $primarycolor;
+}
+
+.footertop {
+    // @include mobsecpad;
+    padding: 100px 15px;
+    @include flexcol;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 50px;
+}
+
+.footertopleft {
+    @include flexcol;
+    // justify-content: center !important;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.footerlogo {
+    width: 100px;
+    height: 60px;
+}
+
+.footertopleft p {
+    text-align: left;
+    font-size: $mobbasetxt;
+    color: $othertcolorII;
+}
+
+.footertopryt {
+    @include flexcol;
+    justify-content: flex-start !important;
+    width: 100%;
+    gap: 50px;
+}
+
+.linkrow {
+    @include flexcol;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.linkrow a {
+    font-size: $smallertxt;
+    color: $othertcolorII;
+    text-decoration: none;
+}
+
+.footerbotom {
+    @include flexrow;
+    // @include secpad;
+    padding: 5px 15px;
+    background-color: #e0ebe0;
+    width: 100%;
+}
+
+.footerbotom p {
+    font-size: $captiontxt;
+}
+
+.footerbotomryt {
+    @include flexrow;
+    // width: ;
+    gap: 2px;
+}
+
+.footerbotomryt img {
+    width: 15px;
+    height: 15px;
+}
+
+// .footerbotomryt a {
+
+// }
+
+// Footer section ends here
+
+
+
+// Media Queries start here. The media query code will start from mobile upward, as the original code(as seen above is for 
+// the mobile version). Tablet screen size next, then desktop version. The two breakpoints that will be specified is 480px
+// for the mobile version and 990px for the tablet version. I.e, any screen from 990px screen dimension upward will take the 
+// desktop version query. Hope this clears a lot. Thank you! 

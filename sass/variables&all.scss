@@ -1,0 +1,157 @@
+@import "reset";
+// end of importations
+
+// colors
+$primarycolor: green;
+$secondarycolor: #1f8fbc;
+$secondarycolorII: #FFef99;
+$backgroundcolor: white;
+$foregroundcolor: #1f1f1f;
+$foregroundcolorII: whitesmoke;
+$othercolor: #E0EBE0;
+$othertcolorII: #f9fbf9;
+
+// textsizes
+$largesttxt: 40px;
+$largerttxt: 32px;
+$largetxt: 28px;
+$biggertxt: 24px;
+$bigtxt: 20px;
+$mediumtxt: 18px;
+$basetxt: 16px;
+$mobbasetxt: 14px;
+$smallertxt: 12px;
+$captiontxt: 10px;
+
+// other variables
+$buttonpadtopbom: 10px;
+$buttonpadrytleft: 20px;
+// variables ends here
+
+
+// Mixim section starts here
+@mixin basetext {
+    font: {
+        family: Regular;
+        size: $basetxt;
+        weight: 400;
+    }
+}
+
+@mixin  transbtn {
+    // @include normalbtn;
+    background-color: transparent;
+    // display: flex;
+    @include flexrow;
+    justify-content: flex-start !important;
+    gap: 10px;
+    color: $primarycolor;
+    // padding: $buttonpadtopbom 0;
+    // border: none;
+    padding: 0px !important;
+    font-size: $smallertxt !important;
+}
+
+@mixin normalbtn {
+    background-color: $primarycolor;
+    padding: $buttonpadtopbom $buttonpadrytleft;
+    border: none;
+    color: whitesmoke;
+    font-size: $basetxt;
+    letter-spacing: 1px;
+    // font: {
+    //     size: $mediumtxt;
+    //     weight: 500;
+    // }
+}
+
+@mixin headertext {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+
+    text: {
+        align: left;
+        transform: capitalize;
+        letter-spacing: 1rem;
+        line-height: 1.1rem;
+    }
+}
+
+@mixin flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin flexrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin sectextera {
+    @include flexcol;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+@mixin sec1img {
+    position: absolute;
+    object-fit: cover;
+}
+
+@mixin mobsecpad {
+    padding: 150px 15px;
+    // width: 100%;
+}
+
+@mixin sec2cont {
+    @include flexcol;
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+    background-color: $othertcolorII;
+    padding: 20px 10px;
+    border: solid 2px $othercolor;
+    width: 47%;
+    height: 250px;
+}
+
+// @mixin sec2icon {
+//     width: 30px;
+//     height: 30px;
+// }
+
+// @mixin footer {
+//     @include secpad;
+//     padding-bottom: 0px !important;
+//     @include flexrow;
+
+// }
+
+// @mixin footertop {
+//     @include flexrow;
+//     width: 100;
+// }
+
+// mixin ends here
+
+// Breakpoints mixins (min 480)
+$tablet: 480px;
+$desktop: 990px;
+
+
+@mixin mobilesecpad {
+    padding: 50px 15px;
+}
+
+@mixin tabletsecpad {
+    padding: 70px 30px;
+}
+
+@mixin desktopsecpad {
+    padding: 100px 50px;
+}
+
+// mixin ends here

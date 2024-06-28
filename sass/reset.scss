@@ -1,0 +1,36 @@
+// @import "variables&all";
+
+// Font
+@font-face {
+    font-family: Bold;
+    src: url(../Assets/Font/Aktiv\ Grotesk/OTF/AktivGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../Assets/Font/Aktiv\ Grotesk/OTF/AktivGrotesk-Regular.otf);
+}
+
+// General: This css code will be implemented across all the website. 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, ul, ol {
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    overflow-x: hidden;
+    font-family: Regular, Verdana, Tahoma;
+    // @include basetext;
+    // overflow-y: hidden;
+    // font: {
+    //     @include basetxt;
+    //     // family: 'Regular', Verdana, Tahoma;
+    //     // size: $basetxt;
+    // }
+    background-color: white;
+    color: #1f1f1f;
+}
