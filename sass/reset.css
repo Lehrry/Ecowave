@@ -19,4 +19,8 @@ html, body, ul, ol {
   font-family: Regular, Verdana, Tahoma;
   background-color: white;
   color: #1f1f1f;
+}
+
+.btnicon {
+  width: 15px;
 }/*# sourceMappingURL=reset.css.map */

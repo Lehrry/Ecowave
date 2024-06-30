@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecowave</title>
     <link rel="stylesheet" href="sass/home/home.css">
+    <link rel="stylesheet" href="sass/home/Responsive/tablet.css">
+    <link rel="stylesheet" href="sass/home/Responsive/desktop.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/scc/font-awesome.min.css">
 </head>
 <body>
+    <div class="offscreen-menu" id="offscreenmenu">
+        <ul>
+            <li><a href="" class="navlink">Home</a></li>
+            <li><a href="" class="navlink">Services</a></li>
+            <li><a href="" class="navlink">Blog</a></li>
+            <li><a href="" class="navlink">About us</a></li>
+            <li><a href="" class="navlink">Contact</a></li>
+        </ul>
+    </div>
     <section class="hero">
         <header>
             <!-- <div class="logo"> -->
                 <img src="Assets/2 25.png" class="logo">
             </div>
-            <div class="hamburger">
-                <i class="fa fa-reorder"></i>
-            </div>
-            <div class="headerleft">
-                <nav>
-                    <ul>
-                        <li><a href="" class="navlink">Home</a></li>
-                        <li><a href="" class="navlink">Services</a></li>
-                        <li><a href="" class="navlink">Blog</a></li>
-                        <li><a href="" class="navlink">About us</a></li>
-                        <li><a href="" class="navlink">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="btnarea">
-                    <button>Book a call</button>
-                    <img class="searchicon" src="#" alt="#">
+            <div class="navbarleft">
+                <div class="hammenu">
+                    <div class="ham-nav" id="hamnav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="headerleft">
+                    <nav>
+                        <ul>
+                            <li><a href="" class="navlink">Home</a></li>
+                            <li><a href="" class="navlink">Services</a></li>
+                            <li><a href="" class="navlink">Blog</a></li>
+                            <li><a href="" class="navlink">About us</a></li>
+                            <li><a href="" class="navlink">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btnarea">
+                        <button class="navbarbtn">Book a call</button>
+                        <!-- <img class="searchicon" src="#" alt="#"> -->
+                    </div>
                 </div>
             </div>
         </header>
@@ -77,19 +94,19 @@
                 <p>Figma ipsum component variant main layer. figma frame device strikethrough. Resizing blur figma export
                     arrow project. Font hand object create content star shadow move . Blur flows figma auto plugin main.
                 </p>
-                <button class="transbtn">Learn more</button>
+                <button class="transbtn">Learn more <img src="svg/Line 1.svg" alt="arrow icon" class="btnicon"></button>
             </div>
         </section>
         <section class="sec2">
             <div class="sec2left">
                 <div class="head">
-                    <h1>What <br>we do</h1>
-                    <img src="Assets/LandingPage/Rectangle 57.png" alt="yellow rectangle" class="pull">
+                    <h1>What <br>we offer</h1>
+                    <img src="Assets/LandingPage/Rectangle 57.png" alt="yellow rectangle" class="pull pull2">
                 </div>
                 <p>Figma ipsum component variant main layer. figma frame device strikethrough. Resizing blur figma export
                     arrow project. Font hand object create content star shadow move . Blur flows figma auto plugin main.
                 </p>
-                <button class="transbtn">Explore more offers<img src="#"></button>
+                <button class="transbtn">Explore more offers<img src="svg/Line 1.svg" class="btnicon"></button>
             </div>
             <div class="sec2ryt">
                 <div class="env-aud">
@@ -132,7 +149,7 @@
                         </p>
                     </div>
                 </div>
-                <button class="transbtn">Book a call<img src="#"></button>
+                <button class="transbtn">Book a call<img src="svg/Line 1.svg" alt="arrow icon" class="btnicon"></button>
             </div>
         </section>
         <section class="sec4">
@@ -141,28 +158,28 @@
                     <p>News feeds</p>
                     <h1>Latest articles</h1>
                 </div>
-                <button class="transbtn">All articles</button>
+                <button class="transbtn alttransbtn">All articles <img src="svg/Line 1.svg" alt="arrow icon" class="btnicon"></button>
             </div>
             <div class="sec4botom">
                 <div class="blogpost">
                     <img src="Assets/LandingPage/Rectangle 58.png" alt="hightension wires connection">
                     <div class="textarea">
                         <p>Figma ipsum component variant main layer.</p>
-                        <button class="transbtn">Read more</button>
+                        <button class="transbtn">Read more <im src="#" class="btnicon"></button>
                     </div>
                 </div>
                 <div class="blogpost">
                     <img src="Assets/LandingPage/Rectangle 59.png" alt="a contractor standing folding hand">
                     <div class="textarea">
                         <p>Figma ipsum component variant main layer.</p>
-                        <button class="transbtn">Read more</button>
+                        <button class="transbtn">Read more <im src="#" class="btnicon"></button>
                     </div>
                 </div>
                 <div class="blogpost blog2hide">
                     <img src="Assets/LandingPage/Rectangle 12.png" alt="windmill in behind the hill">
                     <div class="textarea">
                         <p>Figma ipsum component variant main layer.</p>
-                        <button class="transbtn">Read more</button>
+                        <button class="transbtn">Read more <im src="#" class="btnicon"></button>
                     </div>
                 </div>
             </div>
@@ -177,24 +194,24 @@
             <div class="sec5botom">
                 <div class="faqs">
                     <P>How can i start using the consuilting coupon</P>
-                    <!-- <img src="" alt=""> -->
+                    <img src="svg/circle-add.svg" alt="plus button" class="faqbtnicon">
                     <!-- <i class="material-icons">arrow_left</i> -->
                 </div>
-                <div class="faqs">
+                <!-- <div class="faqs">
                     <P>Do you have a physical office
-                    <img src="#" alt="#">
-                </div>
+                        <img src="svg/circle-add.svg" alt="plus button" class="faqbtnicon">
+                    </div> -->
                 <div class="faqs">
                     <P>What happens if my project fails</P>
-                    <img src="#" alt="#">
+                    <img src="svg/circle-add.svg" alt="plus button" class="faqbtnicon">
                 </div>
                 <div class="faqs">
                     <P>Are you a global consulting firm?</P>
-                    <img src="#" alt="#">
+                    <img src="svg/circle-add.svg" alt="plus button" class="faqbtnicon">
                 </div>
                 <div class="faqs">
                     <P>Do you sell products to enhance environments?</P>
-                    <img src="#" alt="#">
+                    <img src="svg/circle-add.svg" alt="plus button" class="faqbtnicon">
                 </div>
             </div>
         </section>
@@ -218,7 +235,7 @@
                     <a href="#" class="footerlink">Testimonials</a>
                 </div>
                 <div class="linkrow">
-                    <a href="#" class="footerlink">Careers</a>
+                    <a href="#" class="footerlink">Careers</a> 
                     <a href="#" class="footerlink">Partners</a>
                     <a href="#" class="footerlink">Insights</a>
                     <a href="#" class="footerlink">Externals</a>
@@ -241,14 +258,15 @@
             </div>
         </div>
         <div class="footerbotom">
-            <P>2024<img src="#" alt="#"> Ecowaveconsultings</P>
+            <P>Copyright 2024 - Ecowaveconsultings</P>
             <div class="footerbotomryt">
-                <a><img src="#" alt="#" class="footericons"></a>
-                <a><img src="#" alt="#" class="footericons"></a>
-                <a><img src="#" alt="#" class="footericons"></a>
-                <a><img src="#" alt="#" class="footericons"></a>
+                <a><img src="svg/Social Icons-3.svg" alt="#" class="footericons"></a>
+                <a><img src="svg/Social Icons-1.svg" alt="#" class="footericons"></a>
+                <a><img src="svg/Social Icons-2.svg" alt="#" class="footericons"></a>
+                <a><img src="svg/Social Icons-4.svg" alt="#" class="footericons"></a>
             </div>
         </div>
     </footer>
+<script src="home.js"></script>
 </body>
 </html>

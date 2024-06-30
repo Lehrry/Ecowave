@@ -32,7 +32,7 @@ $buttonpadrytleft: 20px;
 // Mixim section starts here
 @mixin basetext {
     font: {
-        family: Regular;
+        // family: Regular;
         size: $basetxt;
         weight: 400;
     }
@@ -44,15 +44,19 @@ $buttonpadrytleft: 20px;
     // display: flex;
     @include flexrow;
     justify-content: flex-start !important;
+    align-items: center;
     gap: 10px;
     color: $primarycolor;
     // padding: $buttonpadtopbom 0;
     // border: none;
     padding: 0px !important;
     font-size: $smallertxt !important;
+    width: 100%;
 }
 
 @mixin normalbtn {
+    // @include flexrow;
+    // align-items: center;
     background-color: $primarycolor;
     padding: $buttonpadtopbom $buttonpadrytleft;
     border: none;
@@ -118,6 +122,11 @@ $buttonpadrytleft: 20px;
     height: 250px;
 }
 
+// @mixin iconsize($width, $height) {
+//     width: $width;
+//     height: $height;
+// }
+
 // @mixin sec2icon {
 //     width: 30px;
 //     height: 30px;
@@ -139,19 +148,30 @@ $buttonpadrytleft: 20px;
 
 // Breakpoints mixins (min 480)
 $tablet: 480px;
-$desktop: 990px;
+$desktop: 1020px;
 
-
+// Breakpoints mixin 480px below (Mobile)
 @mixin mobilesecpad {
     padding: 50px 15px;
 }
 
-@mixin tabletsecpad {
-    padding: 70px 30px;
+
+
+// Breakpoint 480px above (tablet)
+$tabbasetxt: 15px;
+$tabh1font: $biggertxt;
+$tabpfont: $tabbasetxt;
+
+
+@mixin tabsecpad {
+    padding: 100px 30px;
 }
 
-@mixin desktopsecpad {
+// Breakpoint 1020px above (desktop)
+@mixin desksecpad {
     padding: 100px 50px;
 }
+
+
 
 // mixin ends here

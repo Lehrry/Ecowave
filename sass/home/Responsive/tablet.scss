@@ -1,9 +1,270 @@
 // This scss file is for the tablet version of the website.
 // importations
-@import url(../../variables&all.scss);
+@import '../../variables&all';
+@import '../../rest';
 // end of importations
 
-
+// Query starts here
 @media (min-width: 480px) {
+    .hero {
+        @include tabsecpad
+    }
+
+    .navbarleft {
+        @include flexrow;
+        flex-direction: row-reverse;
+        // width: 100%;
+        margin-left: auto;
+    }
+
+    .headerleft {
+        display: flex !important;
+    }
+
+    nav {
+        display: none
+    }
+
+    // .navbarbtn {
+    //     // width: 100%;
+    // }
+    // the header or navbar section ends here
+
+    // hero sectio starts here
+    .textarea {
+        width: 70%;
+    }
+
+    .top h1 {
+        font-size: $biggertxt;
+    }
+
+    .top p {
+        font-size: $tabbasetxt;
+    }
+
+    .socialproofcont {
+        // @include flexrow;
+        display: flex !important;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .socialproof p {
+        font-size: $captiontxt;
+    }
+    // End of hero section
+
+    // section1 start here
+    .sec1 {
+        @include flexrow;
+        flex-direction: row !important;
+        @include tabsecpad;
+        align-items: center;
+    }
+
+    .sec1img3 {
+        top: 20% !important;
+        left: 0% !important;
+    }
+
+    .sec1img4 {
+        width: 150px !important;
+        top: 20% !important;
+        left: 57% !important;
+    }
+
+    .sec1ryt {
+        // width: 45%;
+        margin-top: 200px;
+    }
+
+    .head h1 {
+        font-size: $tabh1font;
+    }
+
+    .head p {
+        font-size: $tabpfont;
+    }
+
+    .pull {
+        bottom: 50% !important;
+    }
+
+    .transbtn {
+        @include transbtn;
+        font-size: $tabpfont !important;
+        // width: 100 !important;
+        // height: 20px !important;
+    }
+    // section1 ends here
     
+    // section 2 starts here
+    .sec2 {
+        @include tabsecpad;
+        // position: relative;
+    }
+
+    .sec2left {
+        width: 70%;
+    }
+
+    .sec2left p {
+        font-size: $tabbasetxt;
+    }
+
+    .pull2 {
+        left: 50% !important;
+    }
+
+
+    .sec2ryt {
+        width: 80%;
+        // right: 0;
+        margin-left: auto;
+        row-gap: 10px;
+    }
+
+    .env-aud {
+        @include sec2cont;
+        width: 30%;
+        margin-top: 100px;
+    }
+
+    .sus-con {
+        @include sec2cont;
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .ene-eff {
+        @include sec2cont;
+        width: 30%;
+    }
+
+    .reg-com {
+        @include sec2cont;
+        width: 30%;
+        margin-top: auto
+    }
+
+    .was-man {
+        @include sec2cont;
+        width: 30%;
+        margin-top: -50px;
+    }
+
+    .coo-tra {
+        @include sec2cont;
+        width: 30%;
+        margin-top: -100px;
+    }
+    // section 2 ends here
+    // section 3 starts here
+    .sec3 {
+        @include tabsecpad;
+    }
+
+    .textholder {
+        width: 60% !important;
+    }
+
+    .topside h1 {
+        font-size: $biggertxt;
+    }
+
+    .secondtop p {
+        font-size: $tabbasetxt;
+    }
+    // section3 ends here
+    // section 4 starts here
+    .sec4 {
+        @include tabsecpad;
+    }
+
+    .sec4top {
+        width: 100%;
+    }
+
+    .sec4topleft {
+        width: 100%;
+    }
+
+    .sec4topleft p {
+        font-size: $tabbasetxt;
+    }
+
+    .sec4topleft h1 {
+        font-size: $biggertxt;
+    }
+
+    .alttransbtn {
+        justify-content: flex-end !important;
+    }
+
+    .sec4botom {
+      @include flexrow;  
+      flex-direction: row !important;
+      gap: 20px !important;
+    }
+
+    .textarea p {
+        font-size: $tabbasetxt;
+    }
+    // section 4 stops here
+    // section 5 starts here
+    .sec5 {
+        @include tabsecpad
+    }
+
+    .sec5botom {
+        width: 70%;
+    }
+
+    // sec5 ends here
+    // sec6 starts here
+    .sec6 {
+        @include tabsecpad
+    }
+
+    .sec6 h1 {
+        font-size: 28px;
+    }
+    // sec6 ends here
+    // footer sec starts here
+    // footer {
+    //     // @include color
+    //     align-items: center;
+    // }
+
+    .footertop {
+        align-items: center;
+    }
+
+    .footertopleft {
+        align-items: center;
+        width: 60%;
+    }
+
+    .footertopleft p {
+        font-size: $tabbasetxt;
+        text-align: center;
+    }
+
+    .footertopryt {
+        @include flexrow;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .linkrow {
+        align-items: center;
+    }
+
+    .linkrow a {
+        text-align: center;
+    }
+
+
+    // fooer sec ends here
 }

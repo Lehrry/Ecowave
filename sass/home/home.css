@@ -21,6 +21,10 @@ html, body, ul, ol {
   color: #1f1f1f;
 }
 
+.btnicon {
+  width: 15px;
+}
+
 @font-face {
   font-family: Bold;
   src: url(../Assets/Font/Aktiv\ Grotesk/OTF/AktivGrotesk-Bold.otf);
@@ -42,6 +46,10 @@ html, body, ul, ol {
   font-family: Regular, Verdana, Tahoma;
   background-color: white;
   color: #1f1f1f;
+}
+
+.btnicon {
+  width: 15px;
 }
 
 .hero {
@@ -71,10 +79,97 @@ header {
   height: 50px;
 }
 
+.haederleftmobile {
+  display: block;
+}
+
+.haederleftmobile img {
+  width: 50px;
+  height: 50px;
+}
+
 .headerleft {
   display: none;
   justify-content: space-between;
   background-color: transparent;
+}
+
+.ham-nav {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.ham-nav span {
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.ham-nav span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-nav span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-nav:active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-nav:active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-nav:active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.offscreen-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-end !important;
+  align-items: center;
+  background-color: green;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  font-size: 18px;
+  text-align: right;
+  transition: 0.3s ease;
+}
+
+.offscreen-menu:active {
+  right: 0;
+}
+
+.offscreen-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offscreen-menu ul li {
+  display: block;
+}
+
+.offscreen-menu ul li a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 nav ul {
@@ -112,6 +207,10 @@ button {
   color: whitesmoke;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+.button img {
+  width: 15px;
 }
 
 .searchicon {
@@ -170,6 +269,7 @@ button {
 .socialproofcont {
   display: flex;
   justify-content: space-between;
+  display: none !important;
   width: 60%;
   flex-direction: flex-start !important;
   gap: 20px;
@@ -203,6 +303,11 @@ button {
   padding: 150px 15px;
   gap: 50px;
   margin-bottom: 200px;
+  background-image: url(../../Assets/LandingPage/Group\ 12.png);
+  background-size: 100% 130%;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: -10px;
 }
 
 .sec1left {
@@ -290,6 +395,7 @@ button {
   display: flex;
   justify-content: space-between;
   justify-content: flex-start !important;
+  align-items: center;
   gap: 10px;
   color: green;
   padding: 0px !important;
@@ -302,6 +408,10 @@ button {
   flex-direction: column;
   justify-content: space-between;
   gap: 0px;
+  background-image: url(../../Assets/LandingPage/Group\ 13.png);
+  background-position: bottom;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
 }
 
 .sec2left {
@@ -314,12 +424,6 @@ button {
   width: 100%;
 }
 
-.sec2left p {
-  font-family: Regular;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .sec2ryt {
   display: flex;
   justify-content: space-between;
@@ -328,6 +432,7 @@ button {
   gap: 15px;
   width: 100%;
   margin-top: -75px;
+  margin-bottom: 300px;
 }
 
 .sec2cont {
@@ -449,6 +554,7 @@ button {
   background-image: url(../../Assets/LandingPage/Rectangle43.png);
   background-size: cover;
   background-position: center;
+  margin-top: -250px;
 }
 
 .textholder {
@@ -524,6 +630,7 @@ button {
   display: flex;
   justify-content: space-between;
   justify-content: flex-start !important;
+  align-items: center;
   gap: 10px;
   color: green;
   padding: 0px !important;
@@ -608,6 +715,10 @@ button {
   align-items: center;
   padding: 15px 10px;
   border-bottom: solid 3px black;
+}
+
+.faqbtnicon {
+  width: 20px;
 }
 
 .faqs p {
@@ -697,6 +808,7 @@ footer {
 .footerbotom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 15px;
   background-color: #e0ebe0;
   width: 100%;
@@ -709,7 +821,7 @@ footer {
 .footerbotomryt {
   display: flex;
   justify-content: space-between;
-  gap: 2px;
+  gap: 10px;
 }
 
 .footerbotomryt img {
