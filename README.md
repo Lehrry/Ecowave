@@ -4,13 +4,6 @@ EcoWave is a comprehensive web design project created as part of a WordPress Dev
 ## Design Phase
 The design phase began with creating detailed wireframes and high-fidelity mockups using Figma. This phase was crucial for defining the visual and structural elements of the website.
 
-### Pages Designed:
-1. **Home Page**: Welcome message, brief description, call-to-action button, and a featured section with the latest blog posts.
-2. **About Us**: Company history, team member introductions with photos and bios, and customer testimonials.
-3. **Services**: Detailed descriptions of services offered with pricing information.
-4. **Blog**: Sample blog posts with engaging titles, dummy text, featured images, categories, and tags.
-5. **Contact Us**: Contact form with fields for name, email, subject, message, and a Google Maps integration showing the business location.
-
 ## Development Phase
 The development phase focuses on translating the design mockups into a fully functional, responsive website using HTML, CSS, and Sass.
 
@@ -22,6 +15,11 @@ The development phase focuses on translating the design mockups into a fully fun
 ### Current Progress:
 - **Home Page**: Completed for mobile screens, with plans to add breakpoints for tablet and desktop versions.
 - **Breakpoints**: Mobile (460px), Tablet (980px), and Desktop (1200px).
+
+### Above progress has been completed
+I have made the website fully responsive across screen sizes. I used breakpoints 480px and 1020. as opposed to 460px and 980px. This is in order to accommodate large screen sizes above 990px. 
+
+Added javascript for menu interaction
 
 ## Installation
 To set up the project locally, follow these steps:
